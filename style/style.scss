@@ -1,0 +1,35 @@
+.form__users {
+    // display: flex;
+    // flex-direction: column;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input-group-text-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-prepend {
+  min-width: 190px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.btn {
+  min-width: 190px;
+}
+
+input[type="date"] {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.error__mas {
+  padding-top: 10px;
+  color: red;
+}
+

@@ -1,0 +1,40 @@
+.form__users {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input-group-text-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-prepend {
+  min-width: 190px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.btn {
+  min-width: 190px;
+}
+
+input[type="date"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error__mas {
+  padding-top: 10px;
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

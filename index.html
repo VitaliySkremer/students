@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form__users" class="form__users">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text input-group-text-left" id="">ФИО</span>
+            </div>
+            <input type="text" id="field__secondname-input" class="form-control field__secondname-input" placeholder="Фамилия" required>
+            <input type="text" id="field__name-input" class="form-control field__name-input" placeholder="Имя" required>
+            <input type="text" id="field__patronymic-input" class="form-control field__patronymic-input" placeholder="Отчество" required>
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text input-group-text-left" id="">Дата рождения</span>
+            </div>
+            <input type="date" id="field__birthday-input" class="form-control field__birthday-input" required>
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text input-group-text-left" id="">Год начала обучения</span>
+            </div>
+            <input type="number" id="field__startlern-input" class="form-control field__startlern-input" required>
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend field__startlern-input">
+              <span class="input-group-text input-group-text-left" id="">Факультет</span>
+            </div>
+            <input type="text" id="field__faculty-input" class="form-control field__faculty-input" required>
+          </div>
+
+          <button type="button" id="btn__add-student" class="btn btn-primary">Добавить студента</button>
+        </form>
+
+        <div class="input-group">
+          <input id="filter__byname" type="text" class="form-control filter__byname" placeholder="Поиск по ФИО">
+          <input id="filter__fuculty" type="text" class="form-control filter__fuculty" placeholder="Поиск по факультету">
+          <input id="filter__year-start" type="text" class="form-control filter__year-start" placeholder="Поиск по году начала обучения">
+          <input id="filter__year-end" type="text" class="form-control filter__year-end" placeholder="Поиск по году окончания обучения">
+        </div>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">
+                <button title="Сортировка по имени" id="name__student-btn" class="name__student-btn sort">
+                  ФИО студента
+                </button>
+              </th>
+              <th scope="col">
+                <button title="Сортировка по факультету" id="faculty__student-dtn" class="faculty__student-dtn sort">
+                  Факультет
+                </button>
+              </th>
+              <th scope="col">
+                <button title="Сортировка по дате рождения" id="datebirthday__student-btn" class="datebirthday__student-btn sort">
+                  Дата рождения (возраст)
+                </button>
+              </th>
+              <th scope="col">
+                <button title="Сортировка по году обучения" id="years__study-btn" class="years__study-btn sort">
+                  Годы обучения
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="table__body" class="table__body">
+          </tbody>
+        </table>
+    </div>
+</body>
+</html>
